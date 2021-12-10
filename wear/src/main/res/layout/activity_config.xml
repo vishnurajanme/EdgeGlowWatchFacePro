@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_grey"
+    tools:context=".ConfigurationActivity"
+    android:padding="@dimen/box_inset_layout_padding"
+    tools:deviceIds="wear"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dark_blue"
+        android:paddingVertical="50dp">
+
+        <TextView
+            android:id="@+id/textSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginBottom="10dp"
+            android:text="Settings"
+            android:textSize="30sp" />
+
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/Date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textSettings"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="40dp"
+            android:text="Date" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/edgeglow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Date"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="40dp"
+            android:text="Edge Glow" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/digitglow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edgeglow"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="40dp"
+            android:text="Digit Glow" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/timeSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/digitglow"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="10dp"
+            android:text="Time Size"
+            android:textAlignment="center"
+            android:textSize="18dp" />
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/sliderDigit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/timeSize"
+            android:layout_centerHorizontal="true"
+            android:valueFrom="100"
+            android:valueTo="300"
+            android:stepSize="1"
+            android:layout_marginHorizontal="30dp"
+            />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/dateSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sliderDigit"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="10dp"
+            android:text="Date Size"
+            android:textAlignment="center"
+            android:textSize="18dp" />
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/sliderDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dateSize"
+            android:layout_centerHorizontal="true"
+            android:valueFrom="5"
+            android:valueTo="22"
+            android:stepSize="1"
+            android:layout_marginHorizontal="30dp"
+            />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/spacing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sliderDate"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="10dp"
+            android:text="Spacing"
+            android:textAlignment="center"
+            android:textSize="18dp" />
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/sliderSpacing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spacing"
+            android:layout_centerHorizontal="true"
+            android:valueFrom="-20"
+            android:valueTo="20"
+            android:stepSize="1"
+            android:layout_marginHorizontal="30dp"
+            />
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sliderSpacing"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="20dp"
+            android:justificationMode="inter_word"
+            android:text="Thank you for purchasing the pro version. Tap on the watch face to change themes. If you want a specific theme, feel free to submit feedback via the companion app in your mobile phone"
+            android:textAlignment="center"
+            android:textSize="12dp" />
+
+
+    </RelativeLayout>
+
+</ScrollView>

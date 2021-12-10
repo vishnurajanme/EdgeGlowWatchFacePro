@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/design_default_color_surface">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/edgeGlow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Edge Glow"
+            android:textAlignment="center"
+            android:textColor="@color/design_default_color_primary"
+            android:textSize="38dp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/watchface"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="132dp"
+            android:layout_below="@id/edgeGlow"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Watch Face"
+            android:textAlignment="textEnd"
+            android:textColor="@color/design_default_color_primary"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/bg"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/app"
+            android:layout_below="@id/watchface"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            app:cardBackgroundColor="@color/design_default_color_primary"
+            android:layout_below="@id/bg"
+            app:cardCornerRadius="20dp"
+            android:layout_marginVertical="10dp"
+            >
+
+            <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textSize="15dp"
+                android:textAlignment="center"
+                android:justificationMode="inter_word"
+                android:text="Thank you for purchasing edge glow watch face pro. Themes are unlocked now. Just tap on the watch face to change themes. Check your watch for a notification to install this watch face. If you are not receiving the notification even after waiting for an hour, visit Google Playstore from your watch and search for edge glow watch face. If you are still facing any difficulty, feel free to contact me."
+                />
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/talk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/card"
+            android:layout_marginHorizontal="10dp"
+            android:text="My website" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/feedback"
+            android:layout_marginHorizontal="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit Bugs or feedback"
+            android:layout_below="@id/talk"
+            android:layout_marginBottom="20dp"/>
+
+
+        
+    </RelativeLayout>
+
+
+</ScrollView>
